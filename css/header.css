@@ -27,3 +27,13 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 600px) {
+  .menu-lista {
+    padding: 2rem 0rem;
+  }
+
+  .menu-lista a {
+    display: none;
+  }
+}

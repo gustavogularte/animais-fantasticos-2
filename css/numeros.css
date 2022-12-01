@@ -35,8 +35,5 @@
 
 
 @media (max-width:600px) {
-  .numeros-container {
-    margin: 0 auto;
-    gap: 6rem;
-  }
+  
 }

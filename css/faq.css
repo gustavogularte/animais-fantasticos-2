@@ -33,7 +33,6 @@
 
 @media (max-width:600px) {
   .perguntas {
-    max-width: 50rem;
-    margin: 0 auto;
+    margin-left: 2rem;
   }
 }
