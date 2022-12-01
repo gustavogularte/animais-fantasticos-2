@@ -65,14 +65,16 @@
 @media (max-width:600px) {
   .grid.animais {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .animais-imagens {
-    max-width: 40rem;
+    max-width: 30rem;
     margin: 0 auto;
   }
 
   .animais-thumbs img {
-    max-height: 12rem;
+    max-height: 8rem;
   }
 }
+

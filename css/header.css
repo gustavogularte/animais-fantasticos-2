@@ -2,11 +2,11 @@
   grid-column: 3/5;
   background: #FFBB55;
   margin-top: 2rem;
+  padding: 2rem;
 }
 
 .menu-lista {
   display: flex;
-  padding: 2rem 0rem;
 }
 
 .menu-lista a {
@@ -15,6 +15,32 @@
   font-weight: bold;
   letter-spacing: 0.2rem;
   padding: 2rem;
+}
+
+[data-dropdown]:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  background: #EE5544;
+  padding: 1rem 0rem;
+  border: solid #222222 0.2rem;
+  position: absolute;
+}
+
+.dropdown-menu li {
+  font-family: monospace;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222222;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  color: #ffffff;
 }
 
 @media (max-width: 800px) {
@@ -30,10 +56,30 @@
 
 @media (max-width: 600px) {
   .menu-lista {
-    padding: 2rem 0rem;
+    display: none;
   }
 
-  .menu-lista a {
+  [data-menu='botao'] {
     display: none;
+    align-items: center;
+    gap: 0.4rem;
+    background: #222222;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  [data-menu='botao']::before {
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 0.2rem;
+    background: #ffffff;
+    box-shadow: 0 0.4rem white, 0 -0.4rem white;
   }
 }

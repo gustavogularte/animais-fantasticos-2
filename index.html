@@ -12,9 +12,18 @@
   <div class="grid-container">
     <header class="header">
       <nav class="menu">
-        <ul class="menu-lista">
+        <button data-menu="botao" aria-expanded="false" aria-controls="menu">MENU</button>
+        <ul class="menu-lista" data-menu="lista">
           <li><a href="#animais">ANIMAIS</a></li>
-          <li><a href="#">SOBRE</a></li>
+          <li data-dropdown>
+            <a href="#">SOBRE</a>
+            <ul class="dropdown-menu">
+              <li>A EMPRESA</li>
+              <li>EQUIPE</li>
+              <li>SÓCIOS</li>
+              <li>INVESTIDORES</li>
+            </ul>
+          </li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contato">CONTATO</a></li>
           <li><a href="#">LOGIN</a></li>
@@ -134,5 +143,7 @@
       <p>Projeto de estudo feito por <a href="https://gustavogularte.github.io">Gustavo Gularte.</a></p>
     </footer>
   </div>
+
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
