@@ -1,0 +1,31 @@
+.perguntas {
+  grid-column: 2/4;
+}
+
+.perguntas dt {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.perguntas dt::before {
+  content: '';
+  display: inline-block;
+  width: 1.6rem;
+  height: 0.8rem;
+  background: #FFBB55;
+  position: absolute;
+  left: -2.4rem;
+}
+
+.perguntas dd {
+  font-size: 1.6rem;
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    grid-column: 1/-1;
+  }
+}

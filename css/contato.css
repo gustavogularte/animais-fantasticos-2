@@ -1,0 +1,37 @@
+.mapa {
+  grid-column: 2;
+}
+
+.contato-lista {
+  grid-column: 3/4;
+  font-size: 1.6rem;
+}
+
+.contato-lista ul {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.contato-lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contato-lista li::before {
+  content: '';
+  display: inline-block;
+  width: 1.6rem;
+  height: 0.8rem;
+  background: #FFBB55;
+}
+
+@media (max-width: 800px) {
+  .mapa {
+    grid-column: 1;
+  }
+
+  .contato-lista {
+    grid-column: 2/-1;
+  }
+}

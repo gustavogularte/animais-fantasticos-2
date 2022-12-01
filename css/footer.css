@@ -1,0 +1,21 @@
+.footer {
+  grid-column: 3/5;
+  background: #FFBB55;
+  margin: 4rem 0rem 2rem 0rem;
+  padding: 2rem;
+}
+
+.footer p, .footer a {
+  font-family: monospace;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    grid-column: 1/5;
+    margin: 2rem 0rem 0rem 0rem;
+    text-align: center;
+  }
+}
