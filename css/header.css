@@ -25,5 +25,12 @@
 
   .menu-lista {
     justify-content: center;
+    padding: 0rem;
+  }
+
+  .menu-lista a {
+    font-size: 1.4rem;
+    padding: 1rem;
+    background-color: red;
   }
 }

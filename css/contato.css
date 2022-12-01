@@ -32,6 +32,6 @@
   }
 
   .contato-lista {
-    grid-column: 2/-1;
+    grid-column: 1;
   }
 }

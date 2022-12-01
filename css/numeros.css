@@ -23,4 +23,12 @@
   .numeros-container {
     grid-column: 1;
   }
+
+  .numeros-animais h3 {
+    font-size: 2.8rem;
+  }
+
+  .numeros-animais span {
+    font-size: 2.4rem;
+  }
 }
