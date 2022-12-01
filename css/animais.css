@@ -76,13 +76,3 @@
     max-height: 12rem;
   }
 }
-
-@media (max-width:450px) {
-  .animais-imagens {
-    max-width: 30rem;
-  }
-
-  .animais-thumbs img {
-    max-height: 8rem;
-  }
-}
