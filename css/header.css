@@ -39,6 +39,10 @@
   cursor: pointer;
 }
 
+[data-menu='botao'] {
+  display: none;
+}
+
 .dropdown-menu li:hover {
   color: #ffffff;
 }
@@ -55,12 +59,33 @@
 }
 
 @media (max-width: 600px) {
+  
+
   .menu-lista {
     display: none;
+    background-color: #FFBB55;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(0,0,0,0.2);
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    padding: 8rem 0rem 2rem 0rem;
+    gap: 2rem;
+    animation: show-right .3s forwards;
   }
 
+  .menu-lista.ativo {
+    display: grid;
+  }
+
+  .dropdown-menu {
+    display: block;
+    position: static;
+    border: none;
+    margin-top: 1rem;
+  }
+ 
   [data-menu='botao'] {
-    display: none;
+    display: flex;
     align-items: center;
     gap: 0.4rem;
     background: #222222;
@@ -69,9 +94,11 @@
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    padding: 0.8rem 1.6rem;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
+    position: relative;
     cursor: pointer;
+    z-index: 1;
   }
 
   [data-menu='botao']::before {
