@@ -4,7 +4,7 @@ export default class Perguntas {
   }
 
   ativarPergunta() {
-    this.target.nextElementSibling.classList.toggle('ativo');
+    this.nextElementSibling.classList.toggle('ativo');
   }
 
   event() {
