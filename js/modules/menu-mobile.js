@@ -16,5 +16,6 @@ export default class MenuMobile {
 
   init() {
     this.event();
+    return this;
   }
 }

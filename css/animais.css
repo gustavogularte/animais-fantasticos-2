@@ -39,6 +39,16 @@
   display: block;
 }
 
+.animais-descricao section.ativo.show-right {
+  display: block;
+  animation: show-right .3s forwards;
+}
+
+.animais-descricao section.ativo.show-down {
+  display: block;
+  animation: show-down .3s forwards;
+}
+
 .animais-descricao p {
   font-size: 1.6rem;
   margin-bottom: 2rem;
