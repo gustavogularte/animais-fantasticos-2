@@ -3,6 +3,7 @@ import AnimaisNav from './modules/animaisNav.js';
 import Perguntas from './modules/peguntas.js';
 import Horario from './modules/horario.js';
 import Modal from './modules/modal.js';
+import ToolTip from './modules/tooltip.js';
 
 const menuMobile = new MenuMobile('[data-menu="botao"]', '.menu-lista');
 menuMobile.init();
@@ -16,5 +17,8 @@ perguntas.init();
 const horario = new Horario('.horario');
 horario.init();
 
-const modal = new Modal('[data-modal="abrir"]','[data-modal="container"]', '[data-modal="fechar"]');
+const modal = new Modal('[data-modal="abrir"]', '[data-modal="container"]', '[data-modal="fechar"]');
 modal.init();
+
+const tooltip = new ToolTip('[data-tooltip]');
+tooltip.init();
