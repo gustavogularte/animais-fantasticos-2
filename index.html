@@ -26,7 +26,7 @@
           </li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contato">CONTATO</a></li>
-          <li><a href="#">LOGIN</a></li>
+          <li><a href="#" data-modal="abrir">LOGIN</a></li>
         </ul>
       </nav>
     </header>
@@ -143,6 +143,19 @@
       <p>Projeto de estudo feito por <a href="https://gustavogularte.github.io">Gustavo Gularte.</a></p>
     </footer>
   </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="fechar" data-modal="fechar">X</button>
+      <form action="">
+        <label for="Email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <button class="entrar" type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
 
   <script src="js/main.js"></script>
 </body>

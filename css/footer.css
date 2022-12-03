@@ -12,6 +12,10 @@
   letter-spacing: 0.1rem;
 }
 
+.footer a {
+  color: #E54;
+}
+
 @media (max-width: 800px) {
   .footer {
     grid-column: 1/5;
