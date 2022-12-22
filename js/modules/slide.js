@@ -10,26 +10,37 @@ export default class Slide {
     this.slide.style.transform = `translate3d(${distX}px, 0, 0)`;
   }
 
-  parar() {
-    this.container.removeEventListener('mousemove', this.mover);
+  parar(e) {
+    const eventType = e.type === 'mouseup' ? 'mousemove' : 'touchmove';
+    this.container.removeEventListener(eventType, this.mover);
     this.dist.posicaoFinal = this.dist.ultimaPosicao;
   }
 
   mover(e) {
-    this.dist.movimento = (this.dist.começo - e.clientX) * 1.6;
+    const eventType = e.type === 'mousemove' ? e.clientX : e.changedTouches[0].clientX;
+    this.dist.movimento = (this.dist.começo - eventType) * 1.6;
     const posicaoFinal = this.dist.posicaoFinal - this.dist.movimento;
     this.moverSlide(posicaoFinal);
   }
 
   iniciar(e) {
-    e.preventDefault();
-    this.dist.começo = e.clientX;
-    this.container.addEventListener('mousemove', this.mover);
+    let movetype;
+    if (e.type === 'mousedown') {
+      e.preventDefault();
+      this.dist.começo = e.clientX;
+      movetype = 'mousemove';
+    } else {
+      this.dist.começo = e.changedTouches[0].clientX;
+      movetype = 'touchmove';
+    }
+    this.container.addEventListener(movetype, this.mover);
   }
 
   event() {
     this.container.addEventListener('mousedown', this.iniciar);
+    this.container.addEventListener('touchstart', this.iniciar);
     this.container.addEventListener('mouseup', this.parar);
+    this.container.addEventListener('touchend', this.parar);
   }
 
   bindEvents() {

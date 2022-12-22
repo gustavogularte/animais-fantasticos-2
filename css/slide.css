@@ -12,7 +12,13 @@
 
 .slide li {
   width: 80vw;
-  max-width: 80rem;
+  max-width: 60rem;
   flex-shrink: 0;
 }
 
+@media (max-width: 800px) {
+  .slide-container {
+    grid-template-columns: 1fr;
+    grid-column: 1/4;
+  }
+}
