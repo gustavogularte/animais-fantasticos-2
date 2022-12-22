@@ -16,7 +16,7 @@
         <ul class="menu-lista">
           <li><a href="#animais">ANIMAIS</a></li>
           <li data-dropdown>
-            <a href="#">SOBRE</a>
+            <a href="./">SOBRE</a>
             <ul class="dropdown-menu">
               <li>A EMPRESA</li>
               <li>EQUIPE</li>
@@ -26,12 +26,12 @@
           </li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contato">CONTATO</a></li>
-          <li><a href="#" data-modal="abrir">LOGIN</a></li>
+          <li><a href="login.html" data-modal="abrir">LOGIN</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="animais grid" id="animais">
+    <main class="animais grid" id="animais" data-anima="scroll">
       <h1 class="titulo">ANIMAIS FANTÁSTICOS</h1>
       <div class="animais-imagens">
         <div class="animal-destaque">
@@ -86,7 +86,7 @@
       </div>
     </main>
 
-    <section class="faq grid" id="faq">
+    <section class="faq grid" id="faq" data-anima="scroll">
       <h1 class="titulo">FAQ</h1>
       <dl class="perguntas">
         <dt class="titulo-secundario">Qual a idade dos animais?</dt>
@@ -100,7 +100,18 @@
       </dl>
     </section>
 
-    <section class="numeros grid">
+    <section class="slide-container grid" data-anima="scroll">
+      <ul class="slide">
+        <li><img src="img/slide/foto1.jpg"></li>
+        <li><img src="img/slide/foto2.jpg"></li>
+        <li><img src="img/slide/foto3.jpg"></li>
+        <li><img src="img/slide/foto4.jpg"></li>
+        <li><img src="img/slide/foto5.jpg"></li>
+        <li><img src="img/slide/foto6.jpg"></li>
+      </ul>
+    </section>
+
+    <section class="numeros grid" data-anima="scroll">
       <h1 class="titulo">NÚMEROS</h1>
       <div class="numeros-container">
         <div class="numeros-animais">
@@ -122,7 +133,7 @@
       </div>
     </section>
     
-    <section class="contato grid" id="contato">
+    <section class="contato grid" id="contato" data-anima="scroll">
       <h1 class="titulo">CONTATO</h1>
       <div class="mapa" data-tooltip aria-label="Endereço aqui rua 06 bairro algum.">
         <img src="img/mapa.jpg" alt="mapa da localização" >

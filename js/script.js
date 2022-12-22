@@ -4,6 +4,9 @@ import Perguntas from './modules/peguntas.js';
 import Horario from './modules/horario.js';
 import Modal from './modules/modal.js';
 import ToolTip from './modules/tooltip.js';
+import ScrollSuave from './modules/scrollSuave.js';
+import ScrollAnima from './modules/scrollAnima.js';
+import Slide from './modules/slide.js';
 
 const menuMobile = new MenuMobile('[data-menu="botao"]', '.menu-lista');
 menuMobile.init();
@@ -22,3 +25,12 @@ modal.init();
 
 const tooltip = new ToolTip('[data-tooltip]');
 tooltip.init();
+
+const scrollSuave = new ScrollSuave('a[href^="#"]');
+scrollSuave.init();
+
+const scrollAnima = new ScrollAnima('[data-anima="scroll"]');
+scrollAnima.init();
+
+const slide = new Slide('.slide-container', '.slide');
+slide.init();
