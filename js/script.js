@@ -34,3 +34,4 @@ scrollAnima.init();
 
 const slide = new Slide('.slide-container', '.slide');
 slide.init();
+slide.addArrow('.prev', '.next');
